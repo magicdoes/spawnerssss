@@ -1,0 +1,31 @@
+name: MagicSpawners
+version: '2.8.0'
+main: com.magicsmp.magicspawners.MagicSpawners
+api-version: '1.21'
+authors: [MagicSMP]
+description: High performance virtual spawners with storage, stacking and loot generation
+softdepend: [Vault, floodgate, Geyser-Spigot]
+
+commands:
+  magicspawners:
+    description: Main MagicSpawners command
+    usage: /magicspawners <give|reload|list|info|panel|help>
+    aliases: [ms, magicspawner, spawners]
+    permission: magicspawners.admin
+
+permissions:
+  magicspawners.admin:
+    description: Full access to MagicSpawners commands
+    default: op
+  magicspawners.break:
+    description: Allows breaking MagicSpawners
+    default: true
+  magicspawners.stack:
+    description: Allows stacking MagicSpawners
+    default: true
+  magicspawners.open:
+    description: Allows opening the spawner GUI
+    default: true
+  magicspawners.changetype:
+    description: Allows changing spawner type with spawn eggs
+    default: op
